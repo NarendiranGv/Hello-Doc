@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCTOR sign-up</title>
+    <link rel="shortcut icon"
+        href="./assetes/img/pngjoy.com_doctors-symbol-doctor-logo-image-png-transparent-png_10246277.png"
+        style="width: 50px; height: 50px;" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assetes/DOCsignup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="back">
+                <a href="./index.html"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a>
+            </div>
+            <h1>Good to have you doctor!</h1>
+            <p>We need some information about you</p>
+        </div>
+        <div class="docsign">
+            <div class="signupform">
+
+                <div class="profile">
+                    <img src="./assetes/img/docsign.png" alt="doctor">
+                </div>
+
+                <div class="details">
+                    <form action="">
+                        <button><i class="fa fa-user-plus" aria-hidden="true"></i><br><span>Upload</span> </button>
+                        <input type="text" placeholder="Name" id="fname" /><br>
+                        <span>
+                            <label for="Gender"><input type="radio" class="male" name="gender" value="male">Male
+                                <input type="radio" class="female" name="gender" value="Female">Female</label><br>
+                        </span>
+                        <input type="text" placeholder="Work Experience" id="fWorkexperience" /><br>
+                        <input type="text" placeholder="Hospital you are currently working in" id="fhospname" /><br>
+                        <input type="text" placeholder="Your Specialization" id="fspec" /><br>
+                        <input type="text" placeholder="Name of the college you studied " id="fclgname" /><br>
+
+                    </form>
+                </div>
+            </div>
+            <div class="upld">
+                <p>Upload your degree certificate authorised by your college here:</p>
+                <button class="btn"><i class="fa fa-upload" aria-hidden="true"></i> Click to Upload</button><br>
+
+                <p>Upload your Doctor License authorised by the Medical council of
+                    India:</p>
+                <button class="btn"><i class="fa fa-upload" aria-hidden="true"></i> Click to Upload</button><br>
+
+                <p>Upload any proof signed by the dean of the hospital your working:</p>
+                <button class="btn"><i class="fa fa-upload" aria-hidden="true"></i> Click to Upload</button><br>
+                <input type="checkbox" class="checkbox" name="agree" value="agree">
+                <label for="agreement">I hereby agree that the above given information are true to my knowledge
+                    and
+                    give permission to use
+                    those details for any medical purposes
+                </label><br>
+                <span><button class="reg">Register</button></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

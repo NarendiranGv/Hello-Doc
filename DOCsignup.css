@@ -1,0 +1,658 @@
+/* 
+* {
+	box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: fit-content;
+    width: auto;
+	margin: -20px 10px 50px;
+    position:absolute;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    color: #ffffff;
+    padding:0;
+    background-color: #00745C;
+    text-align: center;
+    width: 23ch;
+    border-radius: 50px;
+	border: 1px solid #00745C;
+	background-color: #00745C;
+    margin: 2ch;
+    margin-top: 1ch;
+}
+
+.heading p{
+    font-size: 30px;
+    color:#00745C;
+    margin: 1.5ch 0ch 4ch 6ch;
+}
+
+.signupform{
+display: flex;
+justify-content:space-between;
+margin-left: 8%;
+width: 90%;
+
+}
+
+form input,label,button{
+    margin:12px;
+    font-size: 22px;
+}
+
+.profile{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.details form{
+    width: 80%;
+    padding-left: 10ch;
+    margin: 0;
+}
+.profile > form > button{
+    padding: 2ch;
+    font-size: 50px;
+    border-radius: 50%;
+    border-color: rgb(0, 116, 92);
+    color: #00745C;
+    justify-content: center;
+    margin-left: 4ch;
+    cursor: pointer;
+}
+.profile > form > button > span{
+    
+    font-size: 20px;
+}
+
+input{
+    border:none;
+    background-color:#eee;
+    padding: 12px 15px;
+	margin: 8px 0;
+	width: 90%;
+    border: 2px;
+    border-radius: 50px;
+}
+
+.male{
+    width: 20px;
+    height: 20px;  
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.female
+{
+    width: 20px;
+    height: 20px;
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+
+form p{
+   
+	margin: 12px 12px;
+	width: 100%;
+    border: 2px;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+
+.details form button{
+    padding: 2ch;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00745C;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.reg{
+   margin-left: 45%;
+}
+
+.details form button:hover{
+    background:#03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.back{
+	margin: 3ch;
+	padding: 2ch;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.back a{
+    text-decoration: none;
+    color: #000;
+}
+
+.back a:hover{
+    color:#03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.profile img{
+    width: 300px;
+height: 600px;
+padding: 2ch;
+
+}
+
+@media only screen and (max-width: 700px){
+    
+* {
+	box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.back{
+    margin: 1.5ch;
+	padding: 2.5ch;
+    padding-bottom: 0;
+    font-size: 15px;
+    margin-left: 0.5ch;
+}
+
+.heading{
+    margin-left: -1ch;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    padding:0;
+    background-color: #00745C;
+    text-align: center;
+    width: 23ch;
+    border-radius: 50px;
+	border: 1px solid #00745C;
+	background-color: #00745C;
+    margin: 2ch;
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+}
+
+.heading p{
+    font-size: 13px;
+    color:#00745C;
+    margin: 0.5ch 0ch 4ch 6ch;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+   
+}
+.profile > form > button{
+
+    padding: 1ch;
+    font-size: 20px;
+    border-radius: 50%;
+    border-color: rgb(0, 116, 92);
+    color: #00745C;
+    justify-content: center;
+    margin-left: 1.5ch;
+    cursor: pointer;
+}
+
+.profile > form > button > span{
+    
+    font-size: 6px;
+}
+
+.profile > img{
+    margin-left: -2ch;
+    width: 100px;
+    height: auto;
+    padding: 0;
+}
+
+.details form{
+    margin-top: 3ch;
+    width: 180px;
+    margin-left: -2ch;
+    padding: 0;
+    padding-left: 20%;
+} 
+
+form input,label,button{
+    margin:5px;
+    font-size: 5px;
+}
+
+input{
+    font-size: 5px;
+    border:none;
+    background-color:#eee;
+    padding: 6px 7px;
+	margin: 8px 0;
+	width: 100%;
+    border: 2px;
+    border-radius: 50px;
+}
+
+.details form input{
+    font-size: 12px;
+    width: 180px;
+    padding-left: -5ch;
+    margin-left: -5ch;
+   
+}
+.details form input[type='radio']{
+    margin: 0;
+    padding: 0;
+    width:15px;
+    
+}
+
+form span label{
+margin-left: -2ch;
+padding: 1ch;
+font-size: 12px;
+}
+.male{
+    width: 9px;
+    height: 9px;  
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.female
+{
+    width: 9px;
+    height: 9px;
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.upld{
+    margin-top: 9ch;
+    margin-left: -18ch;
+    width: 280px;
+}
+
+form p{
+    font-size: 13px;
+}
+
+.upld input[type='checkbox']{
+    margin-left: 5ch;
+    padding: 0;
+    width: 15px;
+}
+
+.upld label{
+    font-size: 15px;
+    margin-left: 3ch;
+    padding-left: 2ch;
+}
+
+.checkbox{
+    margin-left: 1ch;
+    width: 9px;
+    height: 9px;
+    accent-color:rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.details form button{
+    padding: 1.8ch;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #00745C;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.reg{
+   margin-left: 45%;
+}
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.back {
+    margin: 3ch;
+    padding: 2ch;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #000;
+}
+
+.back a:hover {
+    color: #03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.heading {
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 0;
+    background-color: #00745C;
+    text-align: center;
+    width: 25ch;
+    border-radius: 50px;
+    border: 1px solid #00745C;
+    background-color: #00745C;
+    margin: 2ch;
+    margin-top: 1ch;
+}
+
+.heading p {
+    font-size: 30px;
+    color: #00745C;
+    margin: 1.5ch 0ch 4ch 6ch;
+}
+
+form input,
+label,
+button {
+    margin: 12px;
+    font-size: 22px;
+}
+
+.details {
+    width: 100%;
+}
+
+.details>form>button {
+    padding: 2ch;
+    font-size: 50px;
+    border-radius: 50%;
+    border-color: rgb(0, 116, 92);
+    color: #00745C;
+    justify-content: center;
+    margin-left: 37%;
+    cursor: pointer;
+}
+
+.details>form>button>span {
+
+    font-size: 20px;
+}
+
+
+.profile {
+    width: 55%;
+}
+
+.profile img {
+    width: 55%;
+}
+
+input {
+    border: none;
+    background-color: #eee;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 90%;
+    border: 2px;
+    border-radius: 50px;
+}
+
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.docsign {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-left: 1.5%;
+    accent-color: rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.upld {
+    margin-left: 3%;
+    padding: 3%;
+}
+
+.upld p {
+    margin: 12px;
+    font-size: 22px;
+}
+
+.upld button {
+    padding: 2ch;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00745C;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.upld>span>button {
+    font-size: 20px;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.upld button:hover {
+    background: #03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.container {
+    margin: 3%;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    .back {
+        margin: 1.5ch;
+        padding: 2.5ch;
+        padding-bottom: 0;
+        font-size: 15px;
+        margin-left: 0.3%;
+    }
+
+    .heading {
+        margin-left: -4%;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: normal;
+        color: #ffffff;
+        padding: 0;
+        background-color: #00745C;
+        text-align: center;
+        width: 23ch;
+        border-radius: 50px;
+        border: 1px solid #00745C;
+        background-color: #00745C;
+        margin: 2ch;
+        margin-top: 1ch;
+        margin-bottom: 1ch;
+    }
+
+    .heading p {
+        font-size: 13px;
+        color: #00745C;
+        margin: 0.5ch 0ch 4ch 6ch;
+    }
+
+    form input,
+    label,
+    button {
+        margin: 5px;
+        font-size: 13.5px;
+    }
+
+    .details {
+        width: 68%;
+    }
+
+    .profile img {
+        width: 85%;
+    }
+
+    .details>form>button {
+        padding: 2ch;
+        font-size: 15px;
+        border-radius: 50%;
+        border-color: rgb(0, 116, 92);
+        color: #00745C;
+        justify-content: center;
+        margin-left: 34%;
+        cursor: pointer;
+    }
+
+    .details>form>button>span {
+
+        font-size: 6px;
+    }
+
+    input {
+        border: none;
+        background-color: #eee;
+        padding: 6px 7.5px;
+        margin: 4px 0;
+        width: 90%;
+        border: 2px;
+        border-radius: 50px;
+    }
+
+    input[type='radio'] {
+        width: 10px;
+        height: 10px;
+        accent-color: rgb(0, 116, 92);
+        cursor: pointer;
+    }
+
+    input[type='checkbox'] {
+        width: 10px;
+        height: 10px;
+        margin-left: 1.5%;
+        accent-color: rgb(0, 116, 92);
+        cursor: pointer;
+    }
+
+    .upld p {
+        margin: 6px;
+        font-size: 15px;
+    }
+
+    .upld button {
+        padding: 1ch;
+        font-size: 10px;
+        color: #ffffff;
+        background-color: #00745C;
+        border: none;
+        border-radius: 50px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-left: 3%;
+        cursor: pointer;
+    }
+
+    .upld>span>button {
+        padding: 4%;
+        font-size: 15px;
+        margin-left: 32%;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+
+    .upld button:hover {
+        background: #03cca4;
+        transition: all 0.5s ease 0s;
+    }
+
+    .container{
+        margin: 0 5%;
+    }
+}

@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.back {
+    margin: 3ch;
+    padding: 2ch;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #000;
+}
+
+.back a:hover {
+    color: #03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.heading {
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 0;
+    background-color: #00745C;
+    text-align: center;
+    width: 25ch;
+    border-radius: 50px;
+    border: 1px solid #00745C;
+    background-color: #00745C;
+    margin: 2ch;
+    margin-top: 1ch;
+    margin-left: 2%;
+}
+
+.heading p {
+    font-size: 30px;
+    color: #00745C;
+    margin: 1.5ch 0ch 4ch 6.2%;
+}
+
+.heading h1 {
+    margin-left: 4%;
+}
+
+form input,
+label,
+button {
+    margin: 12px;
+    font-size: 22px;
+}
+
+.details-left>form>button {
+    padding: 2ch;
+    font-size: 50px;
+    border-radius: 50%;
+    border-color: rgb(0, 116, 92);
+    color: #00745C;
+    justify-content: center;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.details-left>form>button>span {
+
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    background-color: #eee;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 90%;
+    border: 2px;
+    border-radius: 50px;
+}
+
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.details-right input[type='radio'] {
+    margin-left: 15%;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 2%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.details-left,
+.image,
+.details-right {
+    width: 33%;
+}
+
+.details form span {
+    margin-left: 3%;
+}
+
+.agree input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(0, 116, 92);
+    cursor: pointer;
+}
+
+.agree {
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+.policy {
+    color: #00745C;
+    cursor: pointer;
+}
+
+.agree button {
+    padding: 2ch;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #00745C;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.agree button:hover {
+    background: #03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.container {
+    margin: 3%;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    .back {
+        margin: 1.5ch;
+        padding: 2.5ch;
+        padding-bottom: 0;
+        font-size: 15px;
+        margin-left: 0.3%;
+    }
+
+    .heading {
+        margin-left: -4%;
+    }
+
+    .heading h1 {
+        margin-left: 6%;
+    }
+
+    h1 {
+        font-size: 22px;
+        font-weight: normal;
+        color: #ffffff;
+        padding: 0;
+        background-color: #00745C;
+        text-align: center;
+        width: 25ch;
+        border-radius: 50px;
+        border: 1px solid #00745C;
+        background-color: #00745C;
+        margin: 2ch;
+        margin-top: 1ch;
+        margin-bottom: 1ch;
+
+    }
+
+    .heading p {
+        font-size: 13px;
+        color: #00745C;
+        margin: 0.5ch 0ch 4ch 6ch;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-left>form>button {
+        padding: 2ch;
+        font-size: 15px;
+        border-radius: 50%;
+        border-color: rgb(0, 116, 92);
+        color: #00745C;
+        justify-content: center;
+        margin-left: 35%;
+        cursor: pointer;
+    }
+
+    .details-left>form>button>span {
+
+        font-size: 6px;
+    }
+
+    .details-left {
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .details-right {
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        width: 45%;
+    }
+
+    form input,
+    label,
+    button {
+        margin: 5px;
+        font-size: 13.5px;
+    }
+
+    input[type='radio'] {
+        width: 10px;
+        height: 10px;
+        accent-color: rgb(0, 116, 92);
+        cursor: pointer;
+    }
+
+    .agree>form>input[type='checkbox'] {
+        width: 10px;
+        height: 10px;
+        margin-left: 1.5%;
+        accent-color: rgb(0, 116, 92);
+        cursor: pointer;
+    }
+
+    input {
+        border: none;
+        background-color: #eee;
+        padding: 6px 7.5px;
+        margin: 4px 0;
+        width: 90%;
+        border: 2px;
+        border-radius: 50px;
+    }
+
+    .agree form {
+        font-size: 12px;
+        margin-left: 4%;
+    }
+
+    .container {
+        margin: 0 5%;
+    }
+
+    .agree>form>button {
+        padding: 0.8ch;
+        font-size: 0.5px;
+        color: #ffffff;
+        background-color: #00745C;
+        border: none;
+        border-radius: 50px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-left: 3%;
+        cursor: pointer;
+    }
+
+    .agree>form>button {
+        padding: 4%;
+        font-size: 15px;
+        margin-left: 30%;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+
+    .agree button:hover {
+        background: #03cca4;
+        transition: all 0.5s ease 0s;
+    }
+}

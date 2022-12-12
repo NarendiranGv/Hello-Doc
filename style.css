@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+body {
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: fit-content;
+    width: auto;
+	margin: -20px 10px 50px;
+    position:absolute;
+}
+
+.content h1 {
+    font-size: 80px;
+    font-weight: normal;
+    color: #00745C;
+    padding: 5%;
+}
+
+.text-content p {
+    background-color: #f2f2f2;
+    position: relative;
+    font-size: 22px;
+    border: 10%;
+    margin: 3ch;
+    padding: 2ch;
+    border-radius: 2ch;
+
+}
+
+.content {
+    display: flex;
+    position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	min-height: 650px;
+}
+
+.login {
+    margin: 2ch;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+
+}
+
+.login h3 {
+    font-size: 4ch;
+    font-weight: normal;
+    color: #00745C;
+}
+
+.login p {
+    padding: 2ch;
+    font-size: 20px;
+    padding-left: 0%;
+}
+
+.login p a{
+    text-decoration: none;   
+}
+
+.login  button a{
+text-decoration: none;
+color: #fff;
+}
+
+.login button {
+    border-radius: 20px;
+	border: 1px solid #00745C;
+	background-color: #00745C;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.login button:hover{
+    background:#03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+.docimg figure img {
+    width: 500px;
+    height: auto;
+}
+
+.login p a{
+    color:#00745C;
+}
+
+.login p a:hover{
+    color: #03cca4;
+    transition: all 0.5s ease 0s;
+}
+
+@media only screen and (max-width: 700px){
+
+    .content{
+        display: flex;
+        position: relative;
+        flex-direction:column;
+        margin: 0;
+        width:300px;
+        margin-top: 8vh
+        
+    }
+
+    .content{
+        width: 45vh;
+    }
+
+    .content h1{
+       font-size: 40px;
+    }
+   
+    .text-content{
+       left: 0;
+        width: 45vh;
+    }
+    
+    .text-content p{
+        font-size: 16px;
+    }
+
+    .left{
+        height: 100%;
+        width: 45vh;
+    }
+
+    .right{
+        width: 50vh;
+        
+    }
+
+    .login{
+        left: 0;
+        width: 42.5vh;
+        margin: 0;
+        padding-right: 0;
+    }
+    .login h3{
+        font-size: 2.5ch;
+    }
+
+    .login p{
+        font-size: small;
+    }
+
+    .docimg figure{
+        align-items: center;
+        margin-left: 3.5ch;
+    }
+
+    .docimg figure img{
+        left: 0;
+        width: 40vh;
+        height: auto;
+        align-items: center;
+    }
+
+    .login button {
+        padding: 6px 22.5px;
+    }
+}
